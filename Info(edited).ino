@@ -9,7 +9,7 @@ char x;
 LiquidCrystal fda21(7, 6, 5, 4, 3, 2);
 SoftwareSerial a(8, 9);
 char lkjdaiw2[] = "C11190018";
-int login = 0;
+int ljog3a14 = 0;
 int dafw84;
 int attemp = 0;
 
@@ -32,7 +32,7 @@ int dafw84P, lknng652, ojger3;
 void setup(){
   pinMode(12, INPUT);
   
-  login = 0;
+  ljog3a14 = 0;
   Serial.begin(115200);
   dkawo.begin(4800);
   fda21.begin(16, 2);
@@ -127,11 +127,11 @@ void loop()
         dakh93 = 1;
       }
       
-      if(login == 0){
+      if(ljog3a14 == 0){
         ky5k();
         }
       
-      if(login == 3){
+      if(ljog3a14 == 3){
         dkawo.write(2);
         fda21.clear();
         fda21.print("PASSWORD ERROR");
@@ -141,16 +141,16 @@ void loop()
         
 		    fda21.clear();
       	fda21.print("Password:");
-        login = 0;
+        ljog3a14 = 0;
         attemp = 0;
         dkawo.write(1);
       }
       
       
-      if(login == 1 && ad5awv == 0){
+      if(ljog3a14 == 1 && ad5awv == 0){
           loggedIn();
       }
-      else if (login == 1 && ad5awv == 1){
+      else if (ljog3a14 == 1 && ad5awv == 1){
           if (fase15 == 0)
           opk15k();
           
@@ -245,7 +245,7 @@ void ky5k(){
       Serial.println(lk41aiw2);
       memset(lk41aiw2, 0, sizeof lk41aiw2);
       Serial.println(lk41aiw2);
-      login = 1;
+      ljog3a14 = 1;
       fda21.setCursor(0,0);
       fda21.print("HI Kevin!");
       fda21.setCursor(0,1);
@@ -261,7 +261,7 @@ void ky5k(){
       if(attemp >= 2){
       	fda21.clear();
         dkawo.write(3);
-        login = 3;
+        ljog3a14 = 3;
       }
       if (attemp < 2){
       	fda21.clear();
@@ -465,7 +465,7 @@ void adwf23(int hykt3){
   	memset(lk41aiw2, 0, sizeof lk41aiw2);
     memset(lk41aiw22, 0, sizeof lk41aiw22);
   	i = 0;
-  	login = 0;
+  	ljog3a14 = 0;
   	fase15 = 0;
   	ad5awv = 0;
   }
